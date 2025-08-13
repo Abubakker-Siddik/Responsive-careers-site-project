@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" src="https://cdn-icons-png.flaticon.com/128/726/726056.png" alt="logo">
+    </div>
+    <img id="banner" src="https://images.pexels.com/photos/21342662/pexels-photo-21342662.jpeg" alt="technology">
+
+    <h1>About Us</h1>
+    <div id="aboutsection">
+        <div id="description">
+            <p>
+                At <strong>NextGen Tech Solutions</strong>, we’re passionate about building innovative software that
+                shapes the future.
+                Our team works on cutting-edge projects in web development, machine learning, and data science,
+                delivering
+                solutions that make a real-world impact.
+            </p>
+            <p>
+                We’re growing fast and looking for talented individuals to join us. Currently, we’re hiring for:
+            </p>
+            <ul>
+                <li>Frontend Developer</li>
+                <li>Backend Developer</li>
+                <li>Machine Learning Engineer</li>
+                <li>Data Science Engineer</li>
+            </ul>
+            <p>
+                If you’re ready to take on exciting challenges and work with a team of passionate innovators,
+                we’d love to hear from you!
+            </p>
+        </div>
+        <div id="pic">
+            <img id="team-image"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="about us">
+        </div>
+    </div>
+
+
+
+    <h2 id="job-opportunity-title">Job Opportunities</h2>
+    <div id="job-div">
+        <table id="job-table">
+            <tr class="job-header">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="job-header">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="job-data">
+                <td>Frontend Developer</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>₹12,00,000</td>
+                <td>August 10, 2025</td>
+            </tr>
+            <tr class="job-data">
+                <td>Full Stack Developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>₹15,00,000</td>
+                <td>August 7, 2025</td>
+            </tr>
+            <tr class="job-data">
+                <td>Data Scientist</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td>$175,000</td>
+                <td>August 5, 2025</td>
+            </tr>
+            <tr class="job-data">
+                <td>Machine Learning Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$160,000</td>
+                <td>August 9, 2025</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Submit Your Application</h2>
+        <form id="form" action="https://formbold.com/s/obDgd" method="post" enctype="multipart/form-data">
+            <div class="field">
+                <div><label for="Name">Full Name</label></div>
+                <input type="text" id="Name" name="Full Name" placeholder="John Doe">
+            </div>
+            <div class="field">
+                <div><label for="pnum">Phone Number</label></div>
+                <input type="number" id="pnum" name="Phone number" placeholder="+911234567890">
+            </div>
+            <div class="field">
+                <div><label for="email">Email</label></div>
+                <input type="email" id="email" name="Email id" placeholder="JohnDoe@example.com" required>
+            </div>
+            <div class="field">
+                <input type="radio" id="male" name="sex" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" required>
+                <label for="female">Female</label>
+            </div>
+            <div class="field">
+                <div><label for="dob">Date of Birth</label></div>
+                <input type="date" id="dob" name="date of birth" required>
+            </div>
+            <div class="field">
+                <div><label for="position">Position Applied</label></div>
+                <select id="position" name="Position Applied" required>
+                    <option value="select option">Select Option</option>
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Fullstack">Fullstack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="ml engineer">ML Engineer</option>
+                </select>
+            </div>
+            <div class="field">
+                <div><label for="resume">Upload Resume</label></div>
+                <input type="file" id="resume" name="resume">
+            </div>
+            <div class="field">
+                <div><label for="msg">Message</label></div>
+                <textarea id="msg" name="Message" placeholder="Explain what makes you suitable for the Job."></textarea>
+            </div>
+            <div class="field">
+                <input type="checkbox" id="check" name="check" required>
+                <label for="check" style="font-size: 14px;">I accept the terms and conditions.</label>
+            </div>
+            <div class="field">
+                <button>submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+    <div id="footer">
+        <ul id="lists">
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Courses</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Programms</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            </li>
+        </ul>
+        <span id="copyright">© 2025 Jobless</span>
+    </div>
+
+</body>
+
+</html>

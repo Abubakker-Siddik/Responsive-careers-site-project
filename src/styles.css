@@ -1,0 +1,183 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: grey;
+}
+
+#navbar {
+    padding: 8px;
+    margin: 0;
+}
+
+#logo {
+    height: 30px;
+}
+
+#banner {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+}
+
+
+#aboutsection {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 8px;
+
+}
+
+#description {
+    width: 50%;
+    padding-right: 8px;
+}
+
+#pic {
+    width: 50%;
+
+}
+
+#team-image {
+    width: 100%;
+    border-radius: 20px;
+
+
+}
+
+#job-opportunity-title {
+    text-align: center;
+    color: grey;
+}
+
+#job-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+
+}
+
+.job-header th {
+    border: 1px solid grey;
+    padding: 8px;
+    background-color: #fce7f3;
+    text-align: left;
+}
+
+.job-data:nth-child(even) {
+    background-color: #fdf2f8;
+}
+
+.job-data td {
+    border: 1px solid grey;
+    padding: 8px;
+
+}
+
+#form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#form label {
+    font-weight: 550;
+}
+
+#form input,
+select,
+textarea,
+button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+
+.field textarea {
+    width: 80%;
+    height: 70px;
+}
+
+.field {
+    padding: 0.5rem;
+}
+
+.field input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+}
+
+
+.field button {
+    border-radius: 16px;
+    background-color: #fce7f3;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    cursor: pointer;
+
+}
+
+button:hover {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: #155dfc;
+
+}
+
+a:hover,
+a:focus {
+    color: #1c398e;
+}
+
+#footer {
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 8px;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+#lists {
+    list-style: none;
+}
+
+#footer li {
+    display: inline;
+    padding: 8px;
+    margin: 0 15px;
+}
+
+#copyright {
+    color: darkgrey;
+}
