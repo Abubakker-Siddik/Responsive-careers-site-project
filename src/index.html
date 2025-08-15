@@ -14,46 +14,58 @@
 </head>
 
 <body>
-    <div id="navbar">
+
+
+    <nav>
         <img id="logo" src="https://cdn-icons-png.flaticon.com/128/726/726056.png" alt="logo">
+    </nav>
+        
+
+    <div>
+        <img id="banner" src="https://images.pexels.com/photos/21342662/pexels-photo-21342662.jpeg" alt="technology">
     </div>
-    <img id="banner" src="https://images.pexels.com/photos/21342662/pexels-photo-21342662.jpeg" alt="technology">
+    
 
     <h1>About Us</h1>
-    <div id="aboutsection">
+    <section id="aboutsection">
+
         <div id="description">
-            <p>
+            <p class="para1">
                 At <strong>NextGen Tech Solutions</strong>, we’re passionate about building innovative software that
                 shapes the future.
                 Our team works on cutting-edge projects in web development, machine learning, and data science,
                 delivering
                 solutions that make a real-world impact.
             </p>
-            <p>
+            <p class="para1">
                 We’re growing fast and looking for talented individuals to join us. Currently, we’re hiring for:
             </p>
-            <ul>
+            <ul class="para1">
                 <li>Frontend Developer</li>
                 <li>Backend Developer</li>
                 <li>Machine Learning Engineer</li>
                 <li>Data Science Engineer</li>
             </ul>
-            <p>
+            <p class="para1">
                 If you’re ready to take on exciting challenges and work with a team of passionate innovators,
                 we’d love to hear from you!
             </p>
         </div>
+
+
         <div id="pic">
             <img id="team-image"
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="about us">
         </div>
-    </div>
 
+
+    </section>
+    
 
 
     <h2 id="job-opportunity-title">Job Opportunities</h2>
-    <div id="job-div">
+    <section id="job-section1">
         <table id="job-table">
             <tr class="job-header">
                 <th rowspan="2">Job Title</th>
@@ -93,10 +105,38 @@
                 <td>August 9, 2025</td>
             </tr>
         </table>
-    </div>
+    </section>
 
-    <div>
-        <h2>Submit Your Application</h2>
+    <section id="job-section2">
+        <div class="job-list">
+            <div class="job-title">Frontend Developer</div>
+            <div class="job-detail">Bengaluru, India</div>
+            <div class="job-detail">₹12,00,000</div>
+            <div class="job-detail">August 10, 2025</div>
+        </div>
+        <div class="job-list">
+            <div class="job-title">Fullstack Developer</div>
+            <div class="job-detail">New Delhi, India</div>
+            <div class="job-detail">₹15,00,000</div>
+            <div class="job-detail">August 7, 2025</div>
+        </div>
+        <div class="job-list">
+            <div class="job-title">Data scientist</div>
+            <div class="job-detail">San Francisco, USA</div>
+            <div class="job-detail">$175,000</div>
+            <div class="job-detail">August 5, 2025</div>
+        </div>
+        <div class="job-list">
+            <div class="job-title">ML Engineer</div>
+            <div class="job-detail">Remote</div>
+            <div class="job-detail">$160,000</div>
+            <div class="job-detail">August 9, 2025</div>
+        </div>
+    </section>
+
+    
+     <h2>Submit Your Application</h2>
+    <section id="form-section">
         <form id="form" action="https://formbold.com/s/obDgd" method="post" enctype="multipart/form-data">
             <div class="field">
                 <div><label for="Name">Full Name</label></div>
@@ -110,7 +150,7 @@
                 <div><label for="email">Email</label></div>
                 <input type="email" id="email" name="Email id" placeholder="JohnDoe@example.com" required>
             </div>
-            <div class="field">
+            <div class="field2">
                 <input type="radio" id="male" name="sex" required>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="sex" required>
@@ -138,22 +178,20 @@
                 <div><label for="msg">Message</label></div>
                 <textarea id="msg" name="Message" placeholder="Explain what makes you suitable for the Job."></textarea>
             </div>
-            <div class="field">
+            <div class="field2">
                 <input type="checkbox" id="check" name="check" required>
-                <label for="check" style="font-size: 14px;">I accept the terms and conditions.</label>
+                <label for="check" >I accept the terms and conditions.</label>
             </div>
             <div class="field">
-                <button>submit</button>
+                <button>Submit Application</button>
             </div>
-
 
         </form>
-    </div>
+    </section>
+   
 
-
-
-    <div id="footer">
-        <ul id="lists">
+    <footer>
+         <ul id="lists">
             <li>
                 <a href="https://www.youtube.com" target="_blank">Courses</a>
             </li>
@@ -164,8 +202,9 @@
                 <a href="https://www.youtube.com" target="_blank">Youtube</a>
             </li>
         </ul>
-        <span id="copyright">© 2025 Jobless</span>
-    </div>
+        <span id="copyright">© 2025 Job Portal</Portal></span>
+    </footer>
+    
 
 </body>
 

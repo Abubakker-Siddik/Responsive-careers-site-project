@@ -1,183 +1,302 @@
-html {
-    font-size: 16px;
+html{
+    font-size: 14px;
 }
 
-body {
+body{
+    margin:0;
     padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
     font-family: 'Inter', sans-serif;
-    text-align: center;
     color: grey;
 }
 
-#navbar {
-    padding: 8px;
-    margin: 0;
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+a{
+    text-decoration: none;
+    color: #0c0a09;
 }
 
-#logo {
+a:hover,a:focus{color: #79716b;}
+
+nav img{
     height: 30px;
+    padding: 4px;
+    margin: 2px;
 }
 
-#banner {
-    width: 100%;
-    height: 415px;
+#banner{
     object-fit: cover;
+    width: 100%;
+    height: 250px;
 }
 
+h1{
+    margin: 12px 12px 0px 12px;
+}
 
-#aboutsection {
+#aboutsection{
     display: flex;
+    flex-direction: column;
+}
+
+
+#description{
+    margin: 16px;
+}
+
+#team-image{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    width: calc(100% - 35px);
     margin: 0 auto;
-    max-width: 800px;
-    padding: 8px;
-
+    display: block;
+    
+    
 }
 
-#description {
-    width: 50%;
-    padding-right: 8px;
+#job-section1{
+    display: none;
 }
 
-#pic {
-    width: 50%;
-
+#job-section2{
+    display: block;
+    padding-left: 20px;
 }
 
-#team-image {
-    width: 100%;
-    border-radius: 20px;
-
-
-}
-
-#job-opportunity-title {
-    text-align: center;
-    color: grey;
-}
-
-#job-table {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 4px;
+.job-list{
+    padding: 4px;
     border: 1px solid grey;
-    border-collapse: collapse;
-
-}
-
-.job-header th {
-    border: 1px solid grey;
-    padding: 8px;
-    background-color: #fce7f3;
-    text-align: left;
-}
-
-.job-data:nth-child(even) {
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-right: 20px;
     background-color: #fdf2f8;
 }
 
-.job-data td {
-    border: 1px solid grey;
-    padding: 8px;
-
+.job-title{
+    font-weight: 600;
 }
 
-#form {
-    max-width: 800px;
+.job-detail{
+    font-weight: 400;
+}
+
+#form-section{
+    padding-left: 20px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-#form label {
-    font-weight: 550;
+.field{
+    padding-top: 12px;
 }
 
-#form input,
-select,
-textarea,
-button {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    margin-top: 4px;
-    border-radius: 4px;
+.field label{
+    font-weight: 500;
+}
+
+.field2{
+    padding-top: 4px;
+}
+
+.field2 label{
+    font-weight: 500;
+}
+#position{
+    width: 95%;
+}
+
+.field input, select, textarea{
+    padding: 8px;
+    width: 90%;
+    border-radius: 8px;
     border: 1px solid grey;
 }
 
-
-.field textarea {
-    width: 80%;
-    height: 70px;
+.field button{
+    border-radius: 8px;
+    border: 1px solid grey;
+    background-color: #fdf2f8;
+    font-weight: 400;
+    padding: 8px;
+    width:calc(100% - 20px);
 }
 
-.field {
-    padding: 0.5rem;
+footer{
+    text-align: center;
+    background-color: #f4f4f5;
+    padding: 16px ;
+    margin-top: 20px;
 }
 
-.field input[type="checkbox"] {
-    width: 12px;
-    height: 12px;
+span{
+    color: rgb(123, 121, 121);
+}
+
+#lists{
+   list-style: none;
+}
+
+#lists li{
+    display: block;
+    padding-right: 36px;
+    padding-bottom: 4px;
+}
+
+a{
+    color: rgb(75, 75, 216);
 }
 
 
-.field button {
-    border-radius: 16px;
-    background-color: #fce7f3;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    cursor: pointer;
-
-}
-
-button:hover {
+button:focus{
     color: grey;
 }
 
-a {
-    text-decoration: none;
-    color: #155dfc;
 
+@media screen and (min-width: 576px){
+    html{
+        font-size: 16px;
+    }
+
+    #banner{
+        height: 350px
+    }
+
+    #job-section1{
+    display: block;
+    }
+    
+    #job-table{
+        width: calc(100% - 25px);
+        margin: 0 auto;
+        max-width: 700px;
+        padding-left:10px;
+        padding-right: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .job-header th{
+       border: 1px solid black;
+       background-color: #fce7f3;
+       padding: 8px;
+    }
+
+    tr:nth-child(even){
+        background-color: #fdf2f8;
+    }
+
+    .job-data td{
+        border: 1px solid black;
+        padding: 8px;
+
+    }    
+    #job-section2{
+    display: none;
+    }
+
+    #position{
+        width: 92%;
+    }
+
+    #lists li{
+        display: inline;
+    }
 }
 
-a:hover,
-a:focus {
-    color: #1c398e;
+@media screen and (min-width: 768px){
+    #banner{
+        height: 400px
+    }
+
+    h1{
+    margin: 20px;
+    }
+
+    #aboutsection{
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+    }
+
+    #description{
+    margin: 20px;
+    width: 50%;
+    padding-left: 20px;
+   
+    
+    margin: 0 auto;
+    }
+
+   #pic{
+    padding: 16px;
+   }
+
+    #team-image{
+    height: 300px;
+    border-radius: 12px;
+    width: calc(100% - 20px); 
+    }
+
+    #job-section1{
+    display: block;
+    }
+
+    #job-table{
+        width: calc(100% - 25px);
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    #job-section2{
+    display: none;
+    }
+
+    .field button{
+        padding: 9px;
+        width: auto;
+    }
+
+    .field input, textarea, select{
+        width: 50%;
+    }
+
+    .field textarea{
+        height: 100px;
+        width: 80%;
+    }
+    .field2{
+        padding-top: 12px;
+    }
+
+    #position{
+        width: 52%;
+    }
+    button:hover, button:focus{
+        color: grey;
+    }
 }
 
-#footer {
-    background-color: #f3f4f6;
-    text-align: center;
-    padding: 8px;
-    margin: 20px 0 0 0;
-    width: 100%;
-}
+@media screen and (min-width: 992px){
+    #banner{
+        height: 600px
+    }
 
-#lists {
-    list-style: none;
-}
-
-#footer li {
-    display: inline;
-    padding: 8px;
-    margin: 0 15px;
-}
-
-#copyright {
-    color: darkgrey;
+    h1{
+    margin: 24px;
+    }
 }
